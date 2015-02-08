@@ -1,0 +1,50 @@
+{% extends "default" %}
+
+{% block head_meta %}
+  <meta name="robots" content="index, follow">
+{% endblock %}
+
+{% block content_wrapper %}
+  <article class="post">
+    <header>
+      <h2>{{ page.title }}</h2>
+
+      <p class="meta">
+        <time datetime="{{ page.date|date('c') }}" pubdate>
+          <span class='month'>{{ page.date|date('F') }}</span>
+          <span class='day'>{{ page.date|date('jS') }}</span>
+          <span class='year'>{{ page.date|date('Y') }}</span>
+        </time>
+      </p>
+
+      {% if page.tags %}
+        <p class="tags">
+          {% for tag in page.tags %}
+            <a class="tag-color tag-color-{{ loop.index }}" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+    </header>
+
+    <div class="post-content">
+      {{ page.blocks.content|raw }}
+    </div>
+
+    {% if page.previous_post or page.next_post %}
+      <nav class="article">
+        <ul class="previous-next">
+          {% if page.next_post %}
+            <li class="next">
+              <a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span><span class="arrow"> &raquo; </span></a>
+            </li>
+          {% endif %}
+          {% if page.previous_post %}
+            <li class="previous">
+              <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow"> &laquo; </span><span class="title">{{ page.previous_post.title }}</span></a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+    {% endif %}
+  </article>
+{% endblock %}

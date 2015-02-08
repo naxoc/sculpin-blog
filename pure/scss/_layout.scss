@@ -1,0 +1,20 @@
+
+@media screen and (min-width: 48em) {
+  .sidebar {
+    width: 25%;
+    background: none repeat scroll 0% 0%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: right;
+    header {
+      margin-top: 80%;
+      padding: 0 $scale;
+    }
+  }
+  .content {
+    margin-left: 25%;
+    max-width: 75%;
+  }
+}
+

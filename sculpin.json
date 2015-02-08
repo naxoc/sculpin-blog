@@ -1,0 +1,8 @@
+{
+  "name": "naxoc/gulp-sculpin",
+  "description": "Sculpin blog Gulp",
+  "type": "sculpin-skeleton",
+  "require": {
+    "mavimo/sculpin-redirect-bundle": "@dev"
+  }
+}

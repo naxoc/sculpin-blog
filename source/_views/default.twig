@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <header>
+      <h1>
+        <a href="{{ site.url }}/">{{ site.title }}</a>
+      </h1>
+      <p>{{ site.subtitle }}</p>
+    </header>
+
+    <nav>
+      <ul class="menu inline-list">
+        <li><a class="button-link" href="{{ site.url }}/blog">Archive</a></li>
+        <li><a class="button-link" href="{{ site.url }}/blog/tags">Tags</a></li>
+        <li><a class="button-link" href="{{ site.url }}/about">About</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main role="main">
+    <section class="content">
+
+      {% block content_wrapper %}
+        {% block content %}{% endblock %}
+      {% endblock %}
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-links">
+      <ul class="inline-list">
+        <li><a class="button-link" href="/atom.xml">Feed</a></li>
+        <li><a class="button-link" href="https://twitter.com/naxoc">Twitter</a></li>
+        <li><a class="button-link" href="https://github.com/naxoc">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

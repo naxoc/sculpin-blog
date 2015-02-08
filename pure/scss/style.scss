@@ -1,0 +1,159 @@
+@import 'bourbon';
+@import '_html5-doctor-reset-stylesheet';
+@import '_variables.scss';
+@import '_layout.scss';
+
+body {
+  font-size: $base-font-px;
+  font-family: $helvetica;
+  background-color: $color-kinda-white;
+  line-height: 1.3;
+  a {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0 0 $scale;
+}
+
+.post-content {
+  font-family: $georgia;
+  h2, h3, h4, h5 {
+    font-family: $helvetica;
+    margin-bottom: $scale-3;
+  }
+  ul {
+    margin: $scale $scale1;
+  }
+}
+
+.content {
+  max-width: 75%;
+  padding: $scale1;
+  a {
+    color: $color-base-0b;
+  }
+  img {
+    max-width: 100%;
+  }
+  h2 {
+    font-size: $scale1;
+  }
+}
+
+// Article.
+.paginated, .post {
+  margin-bottom: $scale2;
+  .meta {
+    margin-top: $scale-1;
+  }
+  header {
+    p {
+      color: $color-base-03;
+      font-size: $scale-1;
+    }
+    h2 {
+      color: $color-base-02;
+      font-size: $scale3;
+      line-height: $scale;
+    }
+    margin-bottom: $scale1;
+  }
+}
+
+.sidebar {
+  color: $color-base-07;
+  background-color: $color-base-0f;
+  text-align: center;
+  padding: $scale-3 0;
+  font-size: $scale;
+  a {
+    color: $color-kinda-white;
+    text-decoration: none;
+  }
+  h1 {
+    font-size: $scale3;
+  }
+}
+
+.inline-list {
+  li {
+    display: inline-block;
+  }
+}
+
+.menu {
+  margin: $scale;
+  a {
+    border-color: $color-base-07;
+  }
+  font-size: $scale-1;
+}
+
+.button-link {
+  border: 2px solid;
+  border-radius: 2px;
+  padding: $scale-4 $scale-2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-links {
+  text-align: center;
+  margin: $scale1;
+  a {
+    color: $color-base-05;
+    border-color: $color-base-06;
+  }
+}
+
+a.tag-color {
+  color: $color-kinda-white;
+  padding: $scale-4 $scale-2;
+  margin-right: $scale-4;
+  margin-left: 0;
+  font-size: $scale;
+}
+
+.tag-color-1 {
+  background-color: $color-base-08;
+}
+
+.tag-color-2 {
+  background-color: $color-base-0a;
+}
+
+.tag-color-3 {
+  background-color: $color-base-0c;
+}
+
+.tag-color-4 {
+  background-color: $color-base-0e;
+}
+
+.tag-color-5 {
+  background-color: $color-base-09;
+}
+
+.tag-color-6 {
+  background-color: $color-base-0b;
+}
+
+.tag-color-7 {
+  background-color: $color-base-0d;
+}
+
+.tag-color-8 {
+  background-color: $color-base-0f;
+}
+
+.previous-next {
+  text-align: center;
+  .title {
+    color: $color-base-03;
+  }
+}
+.previous {
+  margin-top: $scale-1;
+}

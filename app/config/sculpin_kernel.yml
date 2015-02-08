@@ -1,0 +1,8 @@
+services:
+  twig.extension.text:
+    class: Twig_Extensions_Extension_Text
+    tags:
+      - { name: twig.extension }
+sculpin_content_types:
+    posts:
+        permalink: :year/:month/:day/:filename/

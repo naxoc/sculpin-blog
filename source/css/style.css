@@ -1,0 +1,204 @@
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+@media screen and (min-width: 48em) {
+  .sidebar {
+    width: 25%;
+    background: none repeat scroll 0% 0%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: right; }
+    .sidebar header {
+      margin-top: 80%;
+      padding: 0 1em; }
+  .content {
+    margin-left: 25%;
+    max-width: 75%; } }
+
+body {
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  background-color: #f8f8f4;
+  line-height: 1.3; }
+  body a {
+    text-decoration: none; }
+
+p {
+  margin: 0 0 1em; }
+
+.post-content {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+  .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin-bottom: 0.42219em; }
+  .post-content ul {
+    margin: 1em 1.333em; }
+
+.content {
+  max-width: 75%;
+  padding: 1.333em; }
+  .content a {
+    color: #48b685; }
+  .content img {
+    max-width: 100%; }
+  .content h2 {
+    font-size: 1.333em; }
+
+.paginated, .post {
+  margin-bottom: 1.77689em; }
+  .paginated .meta, .post .meta {
+    margin-top: 0.75019em; }
+  .paginated header, .post header {
+    margin-bottom: 1.333em; }
+    .paginated header p, .post header p {
+      color: #776e71;
+      font-size: 0.75019em; }
+    .paginated header h2, .post header h2 {
+      color: #4f424c;
+      font-size: 2.36859em;
+      line-height: 1em; }
+
+.sidebar {
+  color: #e7e9db;
+  background-color: #e96ba8;
+  text-align: center;
+  padding: 0.42219em 0;
+  font-size: 1em; }
+  .sidebar a {
+    color: #f8f8f4;
+    text-decoration: none; }
+  .sidebar h1 {
+    font-size: 2.36859em; }
+
+.inline-list li {
+  display: inline-block; }
+
+.menu {
+  margin: 1em;
+  font-size: 0.75019em; }
+  .menu a {
+    border-color: #e7e9db; }
+
+.button-link {
+  border: 2px solid;
+  border-radius: 2px;
+  padding: 0.31672em 0.56278em;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.footer-links {
+  text-align: center;
+  margin: 1.333em; }
+  .footer-links a {
+    color: #a39e9b;
+    border-color: #b9b6b0; }
+
+a.tag-color {
+  color: #f8f8f4;
+  padding: 0.31672em 0.56278em;
+  margin-right: 0.31672em;
+  margin-left: 0;
+  font-size: 1em; }
+
+.tag-color-1 {
+  background-color: #ef6155; }
+
+.tag-color-2 {
+  background-color: #fec418; }
+
+.tag-color-3 {
+  background-color: #5bc4bf; }
+
+.tag-color-4 {
+  background-color: #815ba4; }
+
+.tag-color-5 {
+  background-color: #f99b15; }
+
+.tag-color-6 {
+  background-color: #48b685; }
+
+.tag-color-7 {
+  background-color: #06b6ef; }
+
+.tag-color-8 {
+  background-color: #e96ba8; }
+
+.previous-next {
+  text-align: center; }
+  .previous-next .title {
+    color: #776e71; }
+
+.previous {
+  margin-top: 0.75019em; }
