@@ -114,6 +114,14 @@ p {
       font-size: 2.36859em;
       line-height: 1em; }
 
+code {
+  font-size: 0.75019em;
+  margin-bottom: 1em; }
+
+:not(pre) > code {
+  color: #815ba4;
+  font-size: 1em; }
+
 .sidebar {
   color: #e7e9db;
   background-color: #e96ba8;

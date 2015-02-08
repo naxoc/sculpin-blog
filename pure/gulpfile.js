@@ -10,7 +10,7 @@ var reload = browserSync.reload;
 var paths = {
   sassFiles: 'scss/*.scss',
   cssDir: '../source/css',
-  outputCss: '../output_dev/**/*.css'
+  outputCss: '../output_dev/css/*.css'
 };
 
 gulp.task('browser-sync', function() {

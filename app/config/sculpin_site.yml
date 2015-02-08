@@ -8,3 +8,5 @@ google_analytics_tracking_id: UA-15300952-1
 
 disqus_shortname: naxocnet
 disqus_url: http://naxoc.net
+
+highlightjs_style: paraiso.dark

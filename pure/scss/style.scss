@@ -60,6 +60,16 @@ p {
     margin-bottom: $scale1;
   }
 }
+// The code that highlight.js is targeting.
+code {
+  font-size: $scale-1;
+  margin-bottom: $scale;
+}
+// The code that is probably just in the body text.
+:not(pre) > code {
+  color: $color-base-0e;
+  font-size: $scale;
+}
 
 .sidebar {
   color: $color-base-07;
