@@ -10,4 +10,4 @@ npm install node-bourbon  --save-dev
 * Font
 
 Google analytics
-Disqus
+DisqusDisqus

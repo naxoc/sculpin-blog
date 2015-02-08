@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
+  <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
@@ -26,7 +26,6 @@
   </aside>
   <main role="main">
     <section class="content">
-
       {% block content_wrapper %}
         {% block content %}{% endblock %}
       {% endblock %}
@@ -51,6 +50,25 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
       ga('send', 'pageview');
+    </script>
+  {% endif %}
+
+  {% if site.disqus_shortname %}
+    <script type="text/javascript">
+      var disqus_shortname = '{{ site.disqus_shortname }}';
+      {% if page.comments == true %}
+        // The trailing slashes are necessary.
+        var disqus_identifier = '{{ site.disqus_url }}{{ page.url }}/';
+        var disqus_url = '{{ site.disqus_url }}{{ page.url }}/';
+        var disqus_script = 'embed.js';
+      {% else %}
+        var disqus_script = 'count.js';
+      {% endif %}
+      (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }());
     </script>
   {% endif %}
 

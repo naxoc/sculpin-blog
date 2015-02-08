@@ -1,7 +1,6 @@
 @import 'bourbon';
 @import '_html5-doctor-reset-stylesheet';
 @import '_variables.scss';
-@import '_layout.scss';
 
 body {
   font-size: $base-font-px;
@@ -156,4 +155,9 @@ a.tag-color {
 }
 .previous {
   margin-top: $scale-1;
+}
+
+
+@media screen and (min-width: 48em) {
+  @import '_layout.scss';
 }

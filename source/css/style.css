@@ -71,21 +71,6 @@ hr {
 input, select {
   vertical-align: middle; }
 
-@media screen and (min-width: 48em) {
-  .sidebar {
-    width: 25%;
-    background: none repeat scroll 0% 0%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    text-align: right; }
-    .sidebar header {
-      margin-top: 80%;
-      padding: 0 1em; }
-  .content {
-    margin-left: 25%;
-    max-width: 75%; } }
-
 body {
   font-size: 18px;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -202,3 +187,23 @@ a.tag-color {
 
 .previous {
   margin-top: 0.75019em; }
+
+@media screen and (min-width: 48em) {
+  .sidebar {
+    width: 25%;
+    background-attachment: scroll;
+    background-position: 0 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: right; }
+    .sidebar header {
+      margin-top: 80%;
+      padding: 0 1em; }
+  .content, footer {
+    margin-left: 25%;
+    max-width: 75%; }
+  .previous-next {
+    text-align: left; }
+  .previous {
+    text-align: right; } }
