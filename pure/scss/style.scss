@@ -19,7 +19,6 @@ p {
 
 .post-content {
   font-family: $georgia;
-  max-width: $scale10 * 3;
   h2, h3, h4, h5 {
     font-family: $helvetica;
     margin-bottom: $scale-3;
@@ -74,6 +73,16 @@ p {
     margin-bottom: $scale1;
   }
 }
+
+.tag-listing {
+  a {
+    margin-right: $scale-4;
+    padding: $scale-3;
+    line-height: $scale4;
+    border: 2px dotted $base16-color-0b;
+  }
+}
+
 // The code that highlight.js is targeting.
 code {
   font-size: $scale-1;

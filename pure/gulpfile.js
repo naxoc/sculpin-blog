@@ -11,6 +11,7 @@ var reload = browserSync.reload;
 var paths = {
   sassFiles: 'scss/*.scss',
   cssDir: '../source/css',
+  mapsDir: '../maps',
   outputCss: '../output_dev/css/*.css'
 };
 
@@ -31,7 +32,7 @@ gulp.task('sass', function () {
       errLogToConsole: true
     }))
 
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write(paths.mapsDir))
     .pipe(gulp.dest(paths.cssDir));
 });
 
