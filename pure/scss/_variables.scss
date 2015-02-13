@@ -21,22 +21,7 @@ $scale10: modular-scale($base-font-size, 10, $base-scale);
 $scale11: modular-scale($base-font-size, 11, $base-scale);
 $scale12: modular-scale($base-font-size, 12, $base-scale);
 
-// http://chriskempson.github.io/base16/#paraiso
-$color-base-00: #2f1e2e;
-$color-base-01: #41323f;
-$color-base-02: #4f424c;
-$color-base-03: #776e71;
-$color-base-04: #8d8687;
-$color-base-05: #a39e9b;
-$color-base-06: #b9b6b0;
-$color-base-07: #e7e9db;
-$color-base-08: #ef6155;
-$color-base-09: #f99b15;
-$color-base-0a: #fec418;
-$color-base-0b: #48b685;
-$color-base-0c: #5bc4bf;
-$color-base-0d: #06b6ef;
-$color-base-0e: #815ba4;
-$color-base-0f: #e96ba8;
 
-$color-kinda-white: lighten($color-base-07, 8%);
+@import '_colors.scss';
+
+$color-kinda-white: lighten($base16-color-07, 8%);

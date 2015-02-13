@@ -35,13 +35,13 @@
         <ul class="previous-next">
           {% if page.next_post %}
             <li class="next">
-              <a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span><span class="arrow"> &raquo; </span></a>
+              <a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span><span class="arrow arrow-east"></span></a>
             </li>
           {% endif %}
           {% if page.previous_post %}
             <li class="previous">
-              <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow"> &laquo; </span><span class="title">{{ page.previous_post.title }}</span></a>
             </li>
+              <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow arrow-west"></span><span class="title">{{ page.previous_post.title }}</span></a>
           {% endif %}
         </ul>
       </nav>

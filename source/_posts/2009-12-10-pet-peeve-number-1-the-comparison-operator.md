@@ -6,6 +6,7 @@ tags:
   - PHP
   - Drupal Planet
 
+comments: true
 redirect:
   - pet-peeve-1-comparison-operator/
 

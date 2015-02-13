@@ -7,6 +7,8 @@ tags:
 - tools
 - devel
 
+comments: true
+
 redirect:
 - krumo/
 - blog/2011/09/14/navigating-with-krumo/

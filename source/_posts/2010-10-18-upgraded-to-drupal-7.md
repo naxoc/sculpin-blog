@@ -6,6 +6,8 @@ tags:
   - D7
   - Drupal Planet
 
+comments: true
+
 redirect:
   - upgraded-to-drupal-7/
   - blog/2010/10/18/upgraded-to-drupal-7/

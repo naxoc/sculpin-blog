@@ -6,6 +6,8 @@ tags:
   - drupal
   - Drupal Planet
 
+comments: true
+
 redirect:
   - blog/2009/11/16/backup-and-migrate-module-plus-dropbox-equals-peace-of-mind/
   - backup-and-migrate-module-dropbox/

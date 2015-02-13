@@ -6,6 +6,8 @@ tags:
   - drupal
   - Drupal Planet
 
+comments: true
+
 redirect:
   - hide-drupal-files-htaccess/
 

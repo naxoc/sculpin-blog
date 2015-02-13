@@ -17,11 +17,17 @@ footer {
   margin-left: 25%;
   max-width: 75%;
 }
-
 .previous-next {
   text-align: left;
+
+  &.archive {
+    text-align: center;
+  }
+}
+.next {
+  text-align: right;
 }
 
 .previous {
-  text-align: right;
+  text-align: left;
 }

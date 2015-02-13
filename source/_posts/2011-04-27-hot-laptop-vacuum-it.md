@@ -7,6 +7,8 @@ tags:
   - laptop
   - nerdy
 
+comments: true
+
 redirect:
 - hot-laptop/
 - blog/2011/04/27/hot-laptop-vacuum-it/

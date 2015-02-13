@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
 sass = require('gulp-sass'),
-bourbon = require('node-bourbon');
+bourbon = require('node-bourbon'),
+sourcemaps = require('gulp-sourcemaps');
 
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
@@ -22,11 +23,16 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function () {
   return gulp.src(paths.sassFiles)
-  .pipe(sass({
-    includePaths: bourbon.includePaths,
-    require: ['normalize-scss']
-  }))
-  .pipe(gulp.dest(paths.cssDir));
+    .pipe(sourcemaps.init())
+
+    .pipe(sass({
+      includePaths: bourbon.includePaths,
+      require: ['normalize-scss'],
+      errLogToConsole: true
+    }))
+
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.cssDir));
 });
 
 gulp.task('listen', function() {

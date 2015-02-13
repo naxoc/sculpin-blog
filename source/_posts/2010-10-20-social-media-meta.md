@@ -6,6 +6,8 @@ tags:
   - meta
   - funny
 
+comments: true
+
 redirect:
   - blog/2010/10/20/social-media-meta/
 ---

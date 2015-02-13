@@ -6,6 +6,8 @@ tags:
 - itunes
 - cli
 
+comments: true
+
 redirect:
 - moving-itunes-library/
 - blog/2011/05/11/moving-an-itunes-library/
