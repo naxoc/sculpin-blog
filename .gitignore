@@ -1,4 +1,5 @@
 .sculpin
 output_dev
+output_prod
 vendor
 pure/node_modules
