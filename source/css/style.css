@@ -170,6 +170,11 @@ code {
   .footer-links a {
     color: #d9d8d8;
     border-color: #e7e7e8; }
+  .footer-links .powered-by {
+    margin-top: 1em;
+    color: #d9d8d8; }
+    .footer-links .powered-by a {
+      color: #959ca1; }
 
 a.tag-color {
   color: white;

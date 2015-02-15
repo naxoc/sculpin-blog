@@ -5,12 +5,12 @@
 {% endblock %}
 
 {% block content_wrapper %}
-  <article class="post">
+  <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h2>{{ page.title }}</h2>
 
       <p class="meta">
-        <time datetime="{{ page.date|date('c') }}" pubdate>
+        <time itemprop="dateCreated" datetime="{{ page.date|date('c') }}">
           <span class='month'>{{ page.date|date('F') }}</span>
           <span class='day'>{{ page.date|date('jS') }}</span>
           <span class='year'>{{ page.date|date('Y') }}</span>
@@ -40,8 +40,8 @@
           {% endif %}
           {% if page.previous_post %}
             <li class="previous">
-            </li>
               <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow arrow-west"></span><span class="title">{{ page.previous_post.title }}</span></a>
+            </li>
           {% endif %}
         </ul>
       </nav>

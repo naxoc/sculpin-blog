@@ -138,6 +138,13 @@ code {
     color: $base16-color-05;
     border-color: $base16-color-06;
   }
+  .powered-by {
+    margin-top: $scale;
+    color: $base16-color-05;
+    a {
+      color: $base16-color-04;
+    }
+  }
 }
 
 a.tag-color {
