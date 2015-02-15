@@ -3,6 +3,8 @@
 This is my blog. The built output can be seen on [naxoc.net](http://naxoc.net). It uses Gulp for the theme because I wanted to play around with that (the folder called pure is the 'theme').
 
 ### To install:
+[Install Sculpin](https://sculpin.io/getstarted/)
+
 ```
 sculpin install
 cd pure
