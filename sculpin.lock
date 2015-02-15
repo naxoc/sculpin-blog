@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b06a66d5210c872a8017b7a204afc9e1",
+    "hash": "5f194547a26600d0c3e276b4aabb9d4c",
     "packages": [
         {
             "name": "mavimo/sculpin-redirect-bundle",
