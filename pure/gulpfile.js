@@ -29,6 +29,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       includePaths: bourbon.includePaths,
       require: ['normalize-scss'],
+      outputStyle: 'compressed',
       errLogToConsole: true
     }))
 
