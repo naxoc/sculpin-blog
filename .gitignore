@@ -3,3 +3,5 @@ output_dev
 output_prod
 vendor
 pure/node_modules
+source/css/style.css
+source/maps/style.css.map
