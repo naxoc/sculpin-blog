@@ -1,7 +1,7 @@
 {% if not post.no_header %}
   <header>
     {% if index %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
     {% else %}
       <h1 class="entry-title">{{ post.title }}</h1>
     {% endif %}
@@ -16,7 +16,7 @@
 {% if index and post.blocks.excerpt %}
   <div class="entry-content">{{ post.blocks.exceprt  }}</div>
   <footer>
-    <a rel="full-article" href="{{ site.url }}{{ post.url }}">{{ site.excerpt_link }}</a>
+    <a rel="full-article" href="{{ post.url }}">{{ site.excerpt_link }}</a>
   </footer>
 {% else %}
   <div class="entry-content">{{ post.blocks.content|raw }}</div>
@@ -28,7 +28,7 @@
       <p class="categories">
         Categories:
         {% for category in post.categories %}
-          <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+          <a href="/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
       </p>
     {% endif %}
@@ -36,7 +36,7 @@
       <p class="tags">
         Tags:
         {% for tag in post.tags %}
-          <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+          <a href="/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
       </p>
     {% endif %}

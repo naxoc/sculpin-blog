@@ -10,7 +10,7 @@ use:
 {% for post in page.pagination.items %}
   <article class="paginated">
     <header>
-      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
       <p class="meta">
         <time datetime="{{ post.date|date('c') }}" >
@@ -24,7 +24,7 @@ use:
       {% if post.meta.tags %}
       <p class="tags">
         {% for tag in post.meta.tags %}
-          <a class="tag-color tag-color-{{ loop.index }}" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+          <a class="tag-color tag-color-{{ loop.index }}" href="/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
         {% endfor %}
       </p>
     </header>
@@ -38,10 +38,10 @@ use:
 {% if page.pagination.previous_page or page.pagination.next_page %}
   <nav>
     {% if page.pagination.previous_page %}
-    <a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer
+    <a href="{{ page.pagination.previous_page.url }}">Newer
       Posts</a>{% endif %}<br/>
     {% if page.pagination.next_page %}
-    <a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older
+    <a href="{{ page.pagination.next_page.url }}">Older
       Posts</a>{% endif %}<br/>
   </nav>
 {% endif %}

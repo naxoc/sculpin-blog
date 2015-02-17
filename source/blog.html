@@ -21,17 +21,17 @@ use:
   <h3>{{ month }} {{ year }}</h3>
   {% endif %}
   <div>
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </div>
   {% endfor %}
 
   {% if page.pagination.previous_page or page.pagination.next_page %}
   <nav class="archive previous-next">
     {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous"><span class="arrow arrow-west"></span><span class="title">Newer &bull; </span></a>
+    <a class="previous" href="{{ page.pagination.previous_page.url }}" title="Previous"><span class="arrow arrow-west"></span><span class="title">Newer &bull; </span></a>
     {% endif %}
     {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next"><span class="title">Older</span><span class="arrow arrow-east"></span></a>
+    <a class="next" href="{{ page.pagination.next_page.url }}" title="Next"><span class="title">Older</span><span class="arrow arrow-east"></span></a>
     {% endif %}
   </nav>
   {% endif %}

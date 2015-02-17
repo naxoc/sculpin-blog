@@ -20,7 +20,7 @@
       {% if page.tags %}
         <p class="tags">
           {% for tag in page.tags %}
-            <a class="tag-color tag-color-{{ loop.index }}" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+            <a class="tag-color tag-color-{{ loop.index }}" href="/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
           {% endfor %}
         </p>
       {% endif %}
@@ -35,12 +35,12 @@
         <ul class="previous-next">
           {% if page.next_post %}
             <li class="next">
-              <a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span><span class="arrow arrow-east"></span></a>
+              <a href="{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span><span class="arrow arrow-east"></span></a>
             </li>
           {% endif %}
           {% if page.previous_post %}
             <li class="previous">
-              <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow arrow-west"></span><span class="title">{{ page.previous_post.title }}</span></a>
+              <a href="{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow arrow-west"></span><span class="title">{{ page.previous_post.title }}</span></a>
             </li>
           {% endif %}
         </ul>
