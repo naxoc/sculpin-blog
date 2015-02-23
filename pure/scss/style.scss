@@ -17,7 +17,7 @@ p {
   margin: 0 0 $scale;
 }
 
-.post-content {
+.content {
   font-family: $georgia;
   h2, h3, h4, h5 {
     font-family: $helvetica;
@@ -28,7 +28,7 @@ p {
   }
 }
 
-.content {
+.content-main {
   max-width: 75%;
   padding: $scale1;
   a {
@@ -70,7 +70,16 @@ p {
       font-size: $scale3;
       line-height: $scale;
     }
+
     margin-bottom: $scale1;
+  }
+  .vcard, time {
+    a {
+      color: $base16-color-03;
+    }
+  }
+  .nickname {
+    display: none;
   }
 }
 

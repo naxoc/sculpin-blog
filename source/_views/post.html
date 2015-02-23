@@ -5,28 +5,39 @@
 {% endblock %}
 
 {% block content_wrapper %}
-  <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="hentry post">
     <header>
-      <h2>{{ page.title }}</h2>
+      <h2 class="entry-title">{{ page.title }}</h2>
 
       <p class="meta">
-        <time itemprop="dateCreated" datetime="{{ page.date|date('c') }}">
-          <span class='month'>{{ page.date|date('F') }}</span>
-          <span class='day'>{{ page.date|date('jS') }}</span>
-          <span class='year'>{{ page.date|date('Y') }}</span>
+        By
+        <span class="author vcard">
+          <a class="url fn n" href="http://naxoc.net">
+            <span class="given-name">Camilla</span>
+            <span class="family-name">Krag Jensen</span>
+          </a>
+          <span class="nickname">naxoc</span>
+        </span>
+      |
+        <time class="published" datetime="{{ page.date|date('c') }}">
+          <a href="{{ site.url }}{{ page.url }}" rel="bookmark">
+            <span class='month'>{{ page.date|date('F') }}</span>
+            <span class='day'>{{ page.date|date('jS') }}</span>
+            <span class='year'>{{ page.date|date('Y') }}</span>
+          </a>
         </time>
       </p>
 
       {% if page.tags %}
         <p class="tags">
           {% for tag in page.tags %}
-            <a class="tag-color tag-color-{{ loop.index }}" href="/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} {% endif %}
+            <a class="tag-color tag-color-{{ loop.index }}" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" rel="tag">{{ tag }}</a>{% if not loop.last %} {% endif %}
           {% endfor %}
         </p>
       {% endif %}
     </header>
 
-    <div class="post-content">
+    <div class="entry-content post-content">
       {{ page.blocks.content|raw }}
     </div>
 

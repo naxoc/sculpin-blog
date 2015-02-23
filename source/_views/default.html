@@ -36,7 +36,7 @@
     </nav>
   </aside>
   <main role="main">
-    <section class="content">
+    <section class="content-main">
       {% block content_wrapper %}
         {% block content %}{% endblock %}
       {% endblock %}
@@ -46,12 +46,12 @@
   <footer>
   <div class="footer-links">
       <ul class="inline-list">
-        <li><a class="button-link" href="/atom.xml">Feed</a></li>
-        <li><a class="button-link" href="https://twitter.com/naxoc">Twitter</a></li>
-        <li><a class="button-link" href="https://github.com/naxoc">GitHub</a></li>
+        <li><a class="button-link" href="{{ site.url }}/atom.xml">Feed</a></li>
+        <li><a class="button-link" href="https://twitter.com/naxoc" rel="me">Twitter</a></li>
+        <li><a class="button-link" href="https://github.com/naxoc" rel="me">GitHub</a></li>
       </ul>
     <div class="powered-by">
-      <p>Powered by <a href="https://sculpin.io/">Sculpin</a></p>
+      <p>Powered by <a href="https://sculpin.io">Sculpin</a></p>
     </div>
     <div class="google-plus">
       <a href="//plus.google.com/u/0/110245117479002469544?prsrc=3"
