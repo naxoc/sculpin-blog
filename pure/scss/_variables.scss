@@ -21,7 +21,6 @@ $scale10: modular-scale($base-font-size, 10, $base-scale);
 $scale11: modular-scale($base-font-size, 11, $base-scale);
 $scale12: modular-scale($base-font-size, 12, $base-scale);
 
-
-@import '_colors.scss';
+@import 'base16/base16-paraiso.scss';
 
 $color-kinda-white: lighten($base16-color-07, 8%);
