@@ -26,6 +26,7 @@
             <span class='year'>{{ page.date|date('Y') }}</span>
           </a>
         </time>
+        <time class="updated" datetime="{{ page.date|date('c') }}"></time>
       </p>
 
       {% if page.tags %}
