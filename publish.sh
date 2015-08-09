@@ -19,8 +19,8 @@ $(git log -1 --pretty=format:'%s (%ci)' --abbrev-commit)
 
 https://github.com/naxoc/sculpin-blog/commit/$(git rev-parse HEAD)" > output_prod/VERSION.txt
 
-# "hazel" is set up in my .ssh/config.
-rsync -avz --delete output_prod/ hazel:/var/www/naxoc.net
+# "almond" is set up in my .ssh/config.
+rsync -avz --delete output_prod/ almond:/var/www/naxoc.net
 if [ $? -ne 0 ]; then echo "Could not publish the site"; exit 1; fi
 
 # Remove the local "deployment" file.
