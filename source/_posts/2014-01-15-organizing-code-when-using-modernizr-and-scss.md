@@ -21,7 +21,7 @@ I started to work on it, but I quickly got frustrated with the organization of t
 .some-div {
   .special-list {
     .extra-special-link {
-      @include background(linear-gradient(left, rgba(242, 156, 45, 0), rgba(242, 156, 45, 1) 30%, rgba(242, 156, 45, 1) 70%, rgba(242, 156, 45, 0)),
+      @include background(linear-gradient(left, rgba(242, 156, 45, 0), rgba(242, 156, 45, 1) 30%, rgba(242, 156, 45, 1) 70%, rgba(242, 156, 45, 0));
     }
   }
 }
@@ -35,7 +35,7 @@ While this works, it becomes hard to find out what the targets are, because the 
 .some-div {
   .special-list {
     .extra-special-link {
-      @include background(linear-gradient(left, rgba(242, 156, 45, 0), rgba(242, 156, 45, 1) 30%, rgba(242, 156, 45, 1) 70%, rgba(242, 156, 45, 0)),
+      @include background(linear-gradient(left, rgba(242, 156, 45, 0), rgba(242, 156, 45, 1) 30%, rgba(242, 156, 45, 1) 70%, rgba(242, 156, 45, 0));
       .no-cssgradients & {
         background: rgba(242, 156, 45, 0);
       }
