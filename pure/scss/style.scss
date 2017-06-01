@@ -23,6 +23,9 @@ p {
     font-family: $helvetica;
     margin-bottom: $scale-3;
   }
+  p {
+    line-height: 1.5;
+  }
   ul {
     margin: $scale $scale1;
   }
