@@ -15,7 +15,11 @@
       "Name": "{{ page.title }}",
       "headline": "{{ page.title }}",
       "datePublished": "{{ page.date|date('c') }}",
+{% if page.dateModified %}
+      "dateModified": "{{ page.dateModified|date('c') }}",
+{% else %}
       "dateModified": "{{ page.date|date('c') }}",
+{% endif %}
       "Description": "{{ page.excerpt }}",
       "mainEntityOfPage": "True",
       "Url": "{{ site.url }}{{ page.url}}",
