@@ -15,12 +15,19 @@
       "Name": "{{ page.title }}",
       "headline": "{{ page.title }}",
       "datePublished": "{{ page.date|date('c') }}",
+      "dateModified": "{{ page.date|date('c') }}",
       "Description": "{{ page.excerpt }}",
       "mainEntityOfPage": "True",
       "Url": "{{ site.url }}{{ page.url}}",
 {% if page.tags %}
       "Keywords": "{{ page.tags|join(', ') }}",
 {% endif %}
+      "image": {
+        "@type": "ImageObject",
+        "url": "http://naxoc.net/img/camilla.jpg",
+        "height": "300",
+        "width": "309"
+      },
       "Author": {
         "@type": "Person",
         "name": "Camilla Krag Jensen"
@@ -29,6 +36,12 @@
         "@type": "Organization",
         "name": "naxoc.net",
         "url": "http://naxoc.net",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://naxoc.net/img/camilla.jpg",
+          "height": "300",
+          "width": "309"
+        }
       }
     }
 </script>
