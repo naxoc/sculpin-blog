@@ -1,7 +1,38 @@
 {% extends "default" %}
 
 {% block head_meta %}
-  <meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ site.url }}{{ page.url}}" />
+{% if page.excerpt %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@naxoc" />
+<meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.excerpt }}" />
+    <script type="application/ld+json">
+{
+      "@context": "http://schema.org",
+      "@id": "{{ site.url }}{{ page.url}}",
+      "@type": "BlogPosting",
+      "Name": "{{ page.title }}",
+      "headline": "{{ page.title }}",
+      "datePublished": "{{ page.date|date('c') }}",
+      "Description": "{{ page.excerpt }}",
+      "mainEntityOfPage": "True",
+      "Url": "{{ site.url }}{{ page.url}}",
+{% if page.tags %}
+      "Keywords": "{{ page.tags|join(', ') }}",
+{% endif %}
+      "Author": {
+        "@type": "Person",
+        "name": "Camilla Krag Jensen"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "naxoc.net",
+        "url": "http://naxoc.net",
+      }
+    }
+</script>
+{% endif %}
 {% endblock %}
 
 {% block content_wrapper %}
