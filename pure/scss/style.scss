@@ -33,7 +33,7 @@ p {
 }
 
 .content-main {
-  padding: $scale1;
+  padding: $scale3;
   a {
     color: $base16-color-0b;
   }
@@ -228,4 +228,18 @@ a.tag-color {
 
 @media screen and (min-width: 58em) {
   @import '_layout.scss';
+}
+
+.centered-image {
+  display: block;
+  margin: 15px auto;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
 }
