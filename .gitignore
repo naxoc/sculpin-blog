@@ -5,3 +5,4 @@ vendor
 pure/node_modules
 source/css/style.css
 source/maps/style.css.map
+composer.phar

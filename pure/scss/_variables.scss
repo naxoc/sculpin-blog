@@ -24,3 +24,6 @@ $scale12: modular-scale(12, $base-font-size,  $base-scale);
 @import 'base16/base16-paraiso.scss';
 
 $color-kinda-white: lighten($base16-color-07, 8%);
+
+$helvetica:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+$georgia:  Georgia, Times, 'Times New Roman', serif;
