@@ -1,16 +1,15 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Compile the sass in the "theme".
-pushd pure
-sass=$(gulp sass | grep gulp-sass)
-if [ -n "$sass" ]; then echo "ERROR: SASS could not be compiled"; exit 1; fi
-popd
+cd pure
+npm run compile
+cd -
 
 # Not sure if Sculpin does this by itself before a generate to prod, but better
 # safe than sorry.
-rm -r output_prod
+rm -fr output_prod
 
-sculpin generate --env=prod
+vendor/bin/sculpin generate --env=prod
 if [ $? -ne 0 ]; then echo "Could not generate the site"; exit 1; fi
 
 # Add a version file to the "deployment".
