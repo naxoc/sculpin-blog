@@ -3,7 +3,7 @@ title: "Navigate in Twig namespaces in PhpStorm"
 date: 2018-10-17 22:20:00 +0200
 comments: true
 tags:
-- phpstorm
+- PHPStorm
 - twig
 excerpt: "Make Twig files included clickable in PhpStorm."
 ---
