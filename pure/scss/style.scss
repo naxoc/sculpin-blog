@@ -12,6 +12,11 @@ body {
     text-decoration: none;
   }
 }
+@media screen and (min-width: 58em) {
+  body {
+  font-size: $base-font-px + 4;
+  }
+}
 
 p {
   margin: 0 0 $scale;
@@ -115,6 +120,9 @@ code {
   a {
     color: $color-kinda-white;
     text-decoration: none;
+  }
+  p {
+    font-size: 85%;
   }
   h1 {
     font-size: $scale3;
