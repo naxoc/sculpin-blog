@@ -3,11 +3,11 @@
 @import '_variables.scss';
 
 body {
-
   font-size: $base-font-px;
-  font-family: $helvetica;
+  font-family: $sans-serif;
   background-color: $color-kinda-white;
-  line-height: 1.3;
+  color: $base16-color-01;
+  line-height: 1.5;
   a {
     text-decoration: none;
   }
@@ -18,13 +18,13 @@ p {
 }
 
 .content {
-  font-family: $georgia;
+  font-family: $serif;
   h2, h3, h4, h5 {
-    font-family: $helvetica;
+    font-family: $sans-serif;
     margin-bottom: $scale-3;
   }
   p {
-    line-height: 1.5;
+    line-height: 1.7;
   }
   ul {
     margin: $scale $scale1;
@@ -200,14 +200,13 @@ a.tag-color {
 }
 
 .previous-next {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
   text-align: center;
   .title {
     color: $base16-color-03;
-    display: inline-block;
   }
-}
-.previous {
-  margin-top: $scale-1;
 }
 
 .arrow {
@@ -236,7 +235,7 @@ a.tag-color {
 }
 .small {
   font-size: 60%;
-  font-family: $helvetica;
+  font-family: $sans-serif;
 }
 
 blockquote {

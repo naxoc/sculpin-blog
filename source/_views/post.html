@@ -92,18 +92,18 @@
 
     {% if page.previous_post or page.next_post %}
       <nav class="article">
-        <ul class="previous-next">
+        <div class="previous-next">
           {% if page.next_post %}
-            <li class="next">
+            <div class="next">
               <a href="{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span><span class="arrow arrow-east"></span></a>
-            </li>
+            </div>
           {% endif %}
           {% if page.previous_post %}
-            <li class="previous">
+            <div class="previous">
               <a href="{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="arrow arrow-west"></span><span class="title">{{ page.previous_post.title }}</span></a>
-            </li>
+            </div>
           {% endif %}
-        </ul>
+          </div>
       </nav>
     {% endif %}
 

@@ -28,10 +28,14 @@ use:
   {% if page.pagination.previous_page or page.pagination.next_page %}
   <nav class="archive previous-next">
     {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ page.pagination.previous_page.url }}" title="Previous"><span class="arrow arrow-west"></span><span class="title">Newer &bull; </span></a>
+    <div  class="previous">
+    <a  href="{{ page.pagination.previous_page.url }}" title="Previous"><span class="arrow arrow-west"></span><span class="title">Newer &bull; </span></a>
+  </div>
     {% endif %}
     {% if page.pagination.next_page %}
+    <div  class="next">
     <a class="next" href="{{ page.pagination.next_page.url }}" title="Next"><span class="title">Older</span><span class="arrow arrow-east"></span></a>
+    </div>
     {% endif %}
   </nav>
   {% endif %}

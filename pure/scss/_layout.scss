@@ -18,20 +18,13 @@
 .content-main,
 footer {
   margin-left: 25%;
-  max-width: 52em;
+  max-width: 46em;
 }
 .previous-next {
-  text-align: left;
 
   &.archive {
     text-align: center;
   }
   margin-bottom: $scale1;
 }
-.next {
-  text-align: right;
-}
 
-.previous {
-  text-align: left;
-}

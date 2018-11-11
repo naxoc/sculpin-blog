@@ -1,5 +1,5 @@
 
-$base-font-px: 18px;
+$base-font-px: 22px;
 $base-font-size: 1em;
 $base-scale: $perfect-fourth;
 
@@ -25,5 +25,5 @@ $scale12: modular-scale(12, $base-font-size,  $base-scale);
 
 $color-kinda-white: lighten($base16-color-07, 8%);
 
-$helvetica:  'Helvetica Neue', Helvetica, Arial, sans-serif;
-$georgia:  Georgia, Times, 'Times New Roman', serif;
+$sans-serif:  'Montserrat', sans-serif;
+$serif:  'Merriweather', serif;
