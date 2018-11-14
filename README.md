@@ -15,7 +15,7 @@ npm run compile
 ### To work on the blog
 In the root directory:
 ```
-sculpin generate --watch --server
+vendor/bin/sculpin generate --watch --server
 ```
 
 In the pure directory:

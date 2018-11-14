@@ -21,7 +21,9 @@ OK, I did have a serious problem when the kernel did a minor upgrade and the com
 Surprisingly little I would say. I got the computer when I switched jobs, so I had to install a lot of new stuff anyway. Maybe if I had been in an existing job it would have felt a little more like a slowdown. I'm also lucky to have quite a few colleagues at [Reload](https://reload.dk/) that use Linux and they have been really helpful when I've run into problems.
 
 ## What I miss from the Mac
-What I miss the most is 1Password. I migrated to LastPass and I am less than overwhelmed with that. Other than that there isn't an app that I really miss, but there are definitely small things that MacOs does better.
+<del>What I miss the most is 1Password.</del> I migrated to LastPass and I am less than overwhelmed with that. It turned out that 1Password is not just a Mac app and that there is an awesome browser plugin that also works in Firefox (which I prefer). There is even a [1Password CLI tool](https://support.1password.com/explore/linux/)! So I'm back to using 1Password.
+
+Other than that there isn't an app that I really miss, but there are definitely small things that MacOs does better. Well maybe [Sourcetree](https://www.sourcetreeapp.com/). I only ever used it for pretty diffs - I use CLI for all commands, so no biggie.
 
 I miss being able to type in the help menu and have an arrow pointing to what i can't find. And I really miss the keyboard shortcuts I spent years learning in PhpStorm - they are all different on Linux so that feels like starting from scratch.  
 
@@ -31,4 +33,4 @@ Oh, and the mouse/trackpad situation. I had no idea there was such a big differe
 ## It's still early
 I'm only a month and a half into using Linux again. In a year I'll have more experience, scars, and hopefully successes. I'm not going to say Ubuntu is better than Kubuntu or vice versa. I like both, but I think I'm sticking with Kubuntu because I used KDE back in university and it's what I'm more used to. 
 
-I've had some help from [Sally's Kubuntu 18.04 on Dell XPS 13" gist](https://gist.github.com/justafish/5679be8cb6ccc37bf1f266ffa2f5c4bf) and after I realized that the the [Albert launcher](https://albertlauncher.github.io/docs/) integrates with [CopyQ](https://hluk.github.io/CopyQ/) I was a lot less sad to loose the clipboard-rememberer in [Alfred for Mac](https://www.alfredapp.com/).
+I've had some help from Sally's [Kubuntu 18.04 on Dell XPS 13" gist](https://gist.github.com/justafish/5679be8cb6ccc37bf1f266ffa2f5c4bf) and after I realized that the the [Albert launcher](https://albertlauncher.github.io/docs/) integrates with [CopyQ](https://hluk.github.io/CopyQ/) I was a lot less sad to loose the clipboard-rememberer in [Alfred for Mac](https://www.alfredapp.com/).
