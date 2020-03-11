@@ -7,6 +7,7 @@ tags:
 - kubuntu
 - dell
 - thunderbolt
+- kde
 excerpt: "Getting Kubuntu to recognize a Thunderbolt dock"
 ---
 
