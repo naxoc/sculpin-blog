@@ -19,7 +19,7 @@ $(git log -1 --pretty=format:'%s (%ci)' --abbrev-commit)
 https://github.com/naxoc/sculpin-blog/commit/$(git rev-parse HEAD)" > output_prod/VERSION.txt
 
 # "nuez" is set up in my .ssh/config.
-rsync -avz --delete output_prod/ nuez:/var/www/naxoc.net
+rsync -avz --delete output_prod/ nuez:/var/www/naxoc.net/public
 if [ $? -ne 0 ]; then echo "Could not publish the site"; exit 1; fi
 
 # Remove the local "deployment" file.
