@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "compile": "gulp sass",
-    "develop": "gulp"
+    "watch": "gulp watch"
   },
   "keywords": [
     "blog",
@@ -15,8 +15,8 @@
   "author": "naxoc",
   "license": "ISC",
   "devDependencies": {
-    "bourbon": "^5.1.0",
-    "gulp": "^3.9.1",
+    "bourbon": "^7.0",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   }
