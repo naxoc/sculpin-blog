@@ -1,3 +1,5 @@
+‼️ This is no longer in use. I migrated to Hugo because I lost my will to live trying to get npm and composer updated on this project. The new reop can be found here: https://github.com/naxoc/naxoc-hugo
+
 # Blog built with Sculpin
 
 This is my blog. The built output can be seen on [naxoc.net](http://naxoc.net). It uses Gulp for the theme because I wanted to play around with that (the folder called pure is the 'theme').
